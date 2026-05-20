@@ -1,0 +1,212 @@
+{
+  "pool_parameters": {
+    "free_chlorine": {
+      "name": "Free Chlorine",
+      "abbreviation": "FC",
+      "description": "The amount of chlorine available to sanitize the water by killing bacteria, viruses, and algae.",
+      "importance": {
+        "swimmer": "Protects swimmers from harmful microorganisms.",
+        "surface": "Prevents algae and organic buildup that can stain pool surfaces.",
+        "equipment": "Helps maintain clean filters and plumbing."
+      },
+      "ideal_range": {
+        "min": 1.0,
+        "max": 3.0,
+        "unit": "ppm"
+      },
+      "measurement_methods": [
+        {
+          "method": "Test Strips",
+          "pros": [
+            "Fast and easy to use",
+            "Inexpensive"
+          ],
+          "cons": [
+            "Less accurate than liquid kits",
+            "Color interpretation can vary"
+          ],
+          "materials": [
+            "Pool test strips"
+          ]
+        },
+        {
+          "method": "Liquid Test Kit",
+          "pros": [
+            "More accurate",
+            "Widely available"
+          ],
+          "cons": [
+            "Requires multiple steps"
+          ],
+          "materials": [
+            "DPD reagent kit"
+          ]
+        },
+        {
+          "method": "Digital Tester",
+          "pros": [
+            "Highly accurate",
+            "Easy to read"
+          ],
+          "cons": [
+            "More expensive"
+          ],
+          "materials": [
+            "Digital photometer"
+          ]
+        }
+      ],
+      "adjustment": {
+        "if_low": {
+          "action": "Add liquid chlorine, chlorine tablets, or shock treatment.",
+          "products": [
+            "Sodium hypochlorite",
+            "Trichlor tablets",
+            "Calcium hypochlorite shock"
+          ]
+        },
+        "if_high": {
+          "action": "Stop adding chlorine and allow sunlight to dissipate excess chlorine.",
+          "products": []
+        }
+      },
+      "safety_precautions": [
+        "Wear gloves and eye protection.",
+        "Never mix chlorine with other chemicals.",
+        "Store in a cool, dry, ventilated area."
+      ]
+    },
+
+    "ph": {
+      "name": "pH",
+      "description": "Measures how acidic or basic the water is.",
+      "importance": {
+        "swimmer": "Improves comfort by reducing eye and skin irritation.",
+        "surface": "Prevents scaling and etching.",
+        "equipment": "Protects heaters and metal components from corrosion."
+      },
+      "ideal_range": {
+        "min": 7.2,
+        "max": 7.6,
+        "unit": ""
+      },
+      "measurement_methods": [
+        {
+          "method": "Test Strips",
+          "pros": [
+            "Quick and easy"
+          ],
+          "cons": [
+            "Moderate accuracy"
+          ],
+          "materials": [
+            "Pool test strips"
+          ]
+        },
+        {
+          "method": "Liquid Test Kit",
+          "pros": [
+            "Reliable and accurate"
+          ],
+          "cons": [
+            "Requires reagent drops"
+          ],
+          "materials": [
+            "Phenol red reagent"
+          ]
+        }
+      ],
+      "adjustment": {
+        "if_low": {
+          "action": "Add pH increaser (soda ash).",
+          "products": [
+            "Sodium carbonate"
+          ]
+        },
+        "if_high": {
+          "action": "Add pH reducer.",
+          "products": [
+            "Muriatic acid",
+            "Sodium bisulfate"
+          ]
+        }
+      },
+      "safety_precautions": [
+        "Always add acid to water, never water to acid.",
+        "Use gloves and goggles.",
+        "Store acids separately from chlorine."
+      ]
+    },
+
+    "total_alkalinity": {
+      "name": "Total Alkalinity",
+      "abbreviation": "TA",
+      "description": "Measures the water's ability to resist pH changes.",
+      "importance": {
+        "swimmer": "Helps maintain stable and comfortable water chemistry.",
+        "surface": "Prevents scaling and etching.",
+        "equipment": "Reduces corrosion risk."
+      },
+      "ideal_range": {
+        "min": 80,
+        "max": 120,
+        "unit": "ppm"
+      }
+    },
+
+    "calcium_hardness": {
+      "name": "Calcium Hardness",
+      "abbreviation": "CH",
+      "description": "Measures dissolved calcium levels in the water.",
+      "importance": {
+        "swimmer": "Generally has little direct effect on swimmer comfort.",
+        "surface": "Prevents plaster etching or scaling.",
+        "equipment": "Protects heaters and plumbing from scale buildup."
+      },
+      "ideal_range": {
+        "min": 200,
+        "max": 400,
+        "unit": "ppm"
+      }
+    },
+
+    "cyanuric_acid": {
+      "name": "Cyanuric Acid",
+      "abbreviation": "CYA",
+      "description": "Protects chlorine from being degraded by sunlight.",
+      "importance": {
+        "swimmer": "Ensures chlorine remains effective.",
+        "surface": "Indirectly prevents algae growth.",
+        "equipment": "Supports overall sanitation efficiency."
+      },
+      "ideal_range": {
+        "min": 30,
+        "max": 50,
+        "unit": "ppm"
+      }
+    }
+  },
+
+  "measurement_material_sources": [
+    {
+      "source": "Pool supply stores",
+      "examples": [
+        "Leslie's Pool Supplies",
+        "Pinch A Penny"
+      ]
+    },
+    {
+      "source": "Home improvement stores",
+      "examples": [
+        "Home Depot",
+        "Lowe's"
+      ]
+    },
+    {
+      "source": "Online retailers",
+      "examples": [
+        "Amazon"
+      ]
+    }
+  ]
+}
