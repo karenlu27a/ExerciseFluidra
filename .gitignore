@@ -6,3 +6,5 @@ data/qdrant_storage/
 logs/
 *.log
 .vscode/
+# Qdrant local database
+data/qdrant/
