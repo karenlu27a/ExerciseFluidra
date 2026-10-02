@@ -1,4 +1,8 @@
+__pycache__/
+*.py[cod]
+.venv/
 .env
+data/qdrant_storage/
 logs/
 *.log
 .vscode/
